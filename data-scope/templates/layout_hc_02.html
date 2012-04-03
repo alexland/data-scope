@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>bi dashboard 0.5 dev</title>
+
+	<link rel="stylesheet" href="../static/hc_ajax_02a.css" />
+	<link rel="stylesheet" href="../static/slider_jqueryTools_01.css" />
+
+	<script src="../static/jquery-1.7.min.js">
+	</script>
+
+	<script src="../static/Highcharts/js/highcharts.js"></script>
+	<script src="../static/Highstock/js/highstock.js"></script>
+
+	<script src="../static/Highcharts/js/modules/exporting.js"></script>
+
+	<script
+		src="http://cdn.jquerytools.org/1.2.6/form/jquery.tools.min.js">
+	</script>
+	<script src="../static/jquery.tools.min.js">
+	</script>
+
+	<script src="../static/hc_ajax_02b.js"></script>
+
+	<script type=text/javascript>
+		var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	</script>
+	</head>
+	<body>
+	 	<header>
+			 <div class='container'>
+		        <a href='/'>
+		          <img src='../static/img/chair.png'/>
+		        </a>
+		        <nav>
+				<a href='/_playPro'>player profiles</a>
+				<a href='/acqRet'>acquisition &amp; retention</a>
+				<a href='/rev'>revenue</a>
+				<a href='/snet'>social network</a>
+		        <a href='/predalg'>predictive algorithms</a>
+				<a href='/lab'>lab</a>
+		        </nav>
+		      </div>
+
+		</header>
+
+		<section id='commands'>
+			<p>
+			</p>
+		</section>
+
+	{% block body %}{% endblock %}
+   	<div class="footer">
+	      <p id="flaskBadge">
+			<a href="http://flask.pocoo.org/">
+				<img
+					src="../static/img/flask.png"
+					border="0"
+					width: 60px
+					height: 10px
+					title="powered by Flask">
+			</a>
+	      </p>
+	    </div>
+
+
+	</body>
+</html>

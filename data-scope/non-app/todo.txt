@@ -1,0 +1,25 @@
+for app_hc_02.py:
+
+X1. FIXME: fix date formatting on x-axus;
+
+X2. FIXME: fix tooltip
+
+ 3. FIXME: radio button controls 
+
+ 	
+
+ 4. FIXME: add png image to "powered by flask" anchor for offline rendering
+
+ 5. in layout--move menu items up on black header strip
+
+ *6. FIXME: get rid of redundant code (e.g., button click handlers)
+
+ 7. install load time widget
+
+ 8. add templates for multiple charts
+ http://jsfiddle.net/hfrntt/QEhA4/9/
+
+ 9. make menu bar icon clickable (return to home)
+
+
+

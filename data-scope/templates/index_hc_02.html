@@ -1,0 +1,100 @@
+{% extends "layout_hc_02.html" %}
+{% block body %}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"
+
+<body>
+<div id="wrap">
+<div id="colLeft">
+	<form>
+		<fieldset id="addDataSeries">
+			<legend> time series </legend>
+			<p>
+				<label for="checkbox1">
+					<input type="checkbox" id="cb1" value="g1" 
+						name="addSeries" class="cbox" />
+					in-game purchase
+				</label>
+			</p>
+			<p>
+				<label for="checkbox1">
+					<input type="checkbox" id="cb2" value="g2" 
+						name="addSeries" class="cbox" />
+					BP circulation
+				</label>
+			</p>
+				<label for="checkbox1">
+					<input type="checkbox" id="cb3" value="g3" 
+						name="addSeries" class="cbox" />
+					island visits
+				</label>
+			<p>
+				<label for="checkbox1">
+				<input type="checkbox" id="cb4" value="g4" 
+					name="addSeries" class="cbox" />
+				session length
+				</label>
+			</p>
+		</fieldset>
+	
+		<fieldset id="radio-group1-all">
+			<legend>period aggregation</legend>
+			<p>
+				<label for="radio-group1">
+					<input type="radio" id="radio-group1" value="days" 
+						name="rollup" class="radio" />
+					days
+				</label>
+			</p>
+			<p>
+				<label for="radio-group1">
+					<input type="radio" id="radio-group1" value="weeks" 
+						name="rollup" class="radio" />
+					weeks
+				</label>
+			</p>
+				<label for="radio-group1">
+					<input type="radio" id="radio-group1" value="months" 
+						name="rollup" class="radio" />
+					months
+				</label>
+			<p>
+				<label for="radio-group1">
+				<input type="radio" id="radio-group1" value="years" 
+					name="rollup" class="radio" />
+					years
+				</label>
+			</p>
+		</fieldset>
+
+		<fieldset id="buttonSet1">
+			<legend>regression</legend>
+			<div class="center" id="btnRow1">
+				<a href="#" class="button button-blue" id="plot1">
+					<span>plot 1</span>
+				</a>
+
+				<a href="#" class="button button-blue" id="plot2">
+					<span>plot 2</span>
+				</a>
+			</div>
+			
+			<div id="regSlider1">
+				<input type="range" name="range1" class="slider" 
+					id="slider1" value="1" />
+			</div>
+
+			<div id="regSlider2">
+				<input type="range" name="range1" class="slider" 
+					id="slider2" value="1" />
+			</div>
+
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="colRight" class="colRight">
+	<div id="plotContainer"></div>
+</div>
+</div>
+{% endblock %}
