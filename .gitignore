@@ -1,0 +1,7 @@
+.DS_Store
+*.png
+/data-scope/static/jquery.tools.min.js
+/data-scope/static/jquery-1.7.min.js
+/data-scope/static/jquery-ui
+/data-scope/Highcharts
+/data-scope/Highstock
