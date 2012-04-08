@@ -8,7 +8,7 @@ from redis import Redis as redis
 from contextlib import closing
 import numpy as NP
 
-
+DEBUG=True
 REDIS_DB = 2
 DEBUG = True
 SECRET_KEY = "!Erew9reQir549&3d394W*"
@@ -16,10 +16,11 @@ USERNAME = None
 PASSWORD = None
 REDIS_HOST = 'localhost'
 PORT = 6379
+# RESOURCE_PATH="/Users/doug/Dropbox/WebDev"
 
 app = FK.Flask(__name__)
 app.config.from_object(__name__)
-app.config.from_envvar('TPL1_SETTINGS', silent=True)
+app.config.from_envvar('DATASCOPE_SETTINGS')
 
 
 def connect_db():
