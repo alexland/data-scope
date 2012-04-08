@@ -9,23 +9,25 @@
 	<link rel="stylesheet" href="../static/datascope-1.css" />
 	<link rel="stylesheet" href="../static/slider_jqueryTools_01.css" />
 
-	<script src="../static/jquery-1.7.min.js">
-	</script>
-
-	<script src="../static/Highcharts/js/highcharts.js"></script>
-	<script src="../static/Highstock/js/highstock.js"></script>
-
-	<script src="../static/Highcharts/js/modules/exporting.js"></script>
-
 	<script
-		src="http://cdn.jquerytools.org/1.2.6/form/jquery.tools.min.js">
+		src="{{ items|join(config.RESOURCE_PATH, 'jquery-1.7.min.js') }}">
 	</script>
-	<script src="../static/jquery.tools.min.js">
+	<script
+		src="{{ items|join(config.RESOURCE_PATH, 'Highcharts/js/highcharts.js') }}">
+	</script>
+	<script
+		src="{{ items|join(config.RESOURCE_PATH, 'Highstock/js/highstock.js') }}">
+	</script>
+	<script
+		src="{{ items|join(config.RESOURCE_PATH, 'Highcharts/js/modules/exporting.js') }}">
+	</script>
+	<script
+		src="{{ items|join(config.RESOURCE_PATH, 'jquery.tools.min.js') }}">
 	</script>
 
 	<script src="../static/datascope-1.js"></script>
 
-	<script type=text/javascript>
+	<script>
 		var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 	</script>
 	</head>
